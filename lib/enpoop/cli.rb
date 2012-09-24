@@ -17,9 +17,9 @@ module Enpoop #:nodoc:
     def initialize(*)
       super
 
-      # the_shell = options['no-colors'] ? Thor::Shell::Basic.new : shell
-      # @shell = UI::Shell.new(the_shell)
-      # @shell.debug! if options['verbose']
+      the_shell = options['no-colors'] ? Thor::Shell::Basic.new : shell
+      @shell = UI::Shell.new(the_shell)
+      @shell.debug! if options['verbose']
     end
 
     desc 'banner', 'Show banner and quit'
@@ -30,7 +30,7 @@ ENPOOP
 ~~~~~~
       D
 
-      @shell.say(banner)
+      @shell.say(banner, :yellow)
     end
 
     desc 'help [TASK]', 'Describe available tasks or one specific task'

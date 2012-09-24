@@ -9,16 +9,18 @@ module Enpoop #:nodoc:
         @debug = ENV['DEBUG']
       end
 
-      def say(message, color, newline = nil)
-        tell_me(message, color, newline) if !@quiet
+      def say(message = nil, color = nil, newline = nil)
+        if message
+          tell_me(message, color, newline)
+        end
       end
 
       def info(message, newline = nil)
-        tell_me(message, nil, newline) if !@quiet
+        tell_me(message, nil, newline) if !quiet?
       end
 
       def confirm(message, newline = nil)
-        tell_me(message, :green, newline) if !@quiet
+        tell_me(message, :green, newline) if !quiet?
       end
 
       def warn(message, newline = nil)
