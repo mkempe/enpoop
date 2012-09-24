@@ -10,9 +10,7 @@ module Enpoop #:nodoc:
       end
 
       def say(message = nil, color = nil, newline = nil)
-        if message
-          tell_me(message, color, newline)
-        end
+        tell_me(message, color, newline) if message
       end
 
       def info(message, newline = nil)
