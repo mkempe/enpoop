@@ -17,11 +17,9 @@ Install
 Usage
 -----
 
-    $ enpoop smell ~/foo
-
-    $ enpoop replace ~/foo Ã¼ ü
-
     $ enpoop help
+    $ enpoop smell ~/foo
+    $ enpoop replace ~/foo Ã¼ ü
 
 License
 -------
