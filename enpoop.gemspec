@@ -1,7 +1,8 @@
 #!/usr/bin/env gem build
 # encoding: utf-8
 
-$:.push File.expand_path('../lib', __FILE__)
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require 'enpoop/version'
 
@@ -13,10 +14,9 @@ Gem::Specification.new do |s|
   s.email         = ['dev@nrolla.com']
   s.homepage      = 'https://github.com/mkempe/enpoop'
   s.version       = Enpoop::VERSION
+  s.platform      = Gem::Platform::RUBY
   s.date          = '2012-09-24'
   s.licenses      = ['MIT']
-
-  s.executables   = ['enpoop']
 
   s.require_paths = ['lib']
 
@@ -32,7 +32,13 @@ Gem::Specification.new do |s|
     README.md
   ]
 
+  s.executables = ['enpoop']
+
   s.test_files = s.files.grep(%r{^(features|spec|test)/})
+
+  # s.files         = `git ls-files`.split($/)
+  # s.executables   = s.files.grep(%r{^bin/}).map { |f| File.basename(f) }
+  # s.test_files    = s.files.grep(%r{^(features|spec|test)/})
 
   s.add_runtime_dependency 'thor', '~> 0.16.0'
 
