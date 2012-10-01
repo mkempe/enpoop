@@ -26,6 +26,6 @@ License
 
 MIT License
 
-Enpoop is released under the MIT license.
+“enpoop” is released under the MIT license.
 
-See `COPYING`.
+See “COPYING”.
