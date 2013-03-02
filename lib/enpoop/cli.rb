@@ -5,7 +5,7 @@ require 'thor/actions'
 
 require 'enpoop/ui/shell'
 
-module Enpoop #:nodoc:
+module Enpoop
   class CLI < Thor
     include Thor::Actions
 

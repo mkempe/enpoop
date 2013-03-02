@@ -4,7 +4,7 @@
 if File.exists?(File.join(File.expand_path('../..', __FILE__), '.git'))
   enpoop_path = File.expand_path('../../lib', __FILE__)
 
-  $:.unshift(enpoop_path)
+  $:.unshift enpoop_path
 end
 
 require 'enpoop/cli'

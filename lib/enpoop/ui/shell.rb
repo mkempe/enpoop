@@ -1,7 +1,7 @@
 # encoding: utf-8
 
-module Enpoop #:nodoc:
-  module UI #:nodoc:
+module Enpoop
+  module UI
     class Shell
       def initialize(shell)
         @shell = shell
