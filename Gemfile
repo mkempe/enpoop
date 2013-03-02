@@ -3,6 +3,6 @@
 
 ruby '1.9.3'
 
-source :rubygems
+source 'https://rubygems.org'
 
 gemspec # Include gemspec dependencies

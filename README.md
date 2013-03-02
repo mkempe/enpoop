@@ -1,8 +1,5 @@
-[ENPOOP](https://github.com/mkempe/enpoop)
-==========================================
-
-Summary
--------
+[ENPOOP](https://github.com/mkempe/enpoop "Enpoop")
+===================================================
 
 “Encoding + Poop = Enpoop”
 
@@ -26,6 +23,6 @@ License
 
 MIT License
 
-“enpoop” is released under the MIT license.
+“Enpoop” is released under the MIT license.
 
 See “COPYING”.

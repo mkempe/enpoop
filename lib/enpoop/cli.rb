@@ -9,8 +9,8 @@ module Enpoop #:nodoc:
   class CLI < Thor
     include Thor::Actions
 
-    class_option 'no-colors' => false, :aliases => '-p'
-    class_option 'verbose' => false, :aliases => '-v'
+    class_option 'no-colors' => false, aliases: '-p'
+    class_option 'verbose' => false, aliases: '-v'
 
     default_task :smell
 

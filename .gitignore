@@ -1,5 +1,17 @@
+# Ignore gem files
 *.gem
+
+# Ignore sublime workspace files
+*.sublime-workspace
+
+# Ignore bundler config
 .bundle
+
+# Ignore rvm config
 .rvmrc
+
+# Ignore “Gemfile.lock”
 Gemfile.lock
-pkg/*
+
+# Ignore “pkg” folder
+pkg
