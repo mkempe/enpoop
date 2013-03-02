@@ -8,7 +8,7 @@ Install
 
     $ git clone git@github.com:mkempe/enpoop.git enpoop
     $ cd enpoop
-    $ bundle install
+    $ bundle
     $ rake install
 
 Usage
